@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="Even or Odd">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+</body>
+<script>
+let num = [ 5, 20, 11, 42, 2, 19 ];
+let arrEven = [];
+let arrOdd = [];
+
+function question0(array){
+  for (let i = 0; i < num.length; i++){
+    console.log(num[i]);
+    console.log('-----'+(num[i] % 2) != 1); 
+    
+    if ((num[i] % 2) === 0){
+      arrEven.push(num[i]);
+    }else{
+      arrOdd.push(num[i]);
+    }
+  }
+  console.log('arrEven-----'+arrEven);
+  console.log('arrOdd------'+arrOdd);
+  console.log('array-------'+array);
+  
+  //return arrEven;
+  //return arrOdd;
+}
+
+(function(){
+  question0(num)
+})();
+</script>
+</html>
